@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".kotlin.KotlinActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".kotlin.CalculatorActivity"
+                  android:windowSoftInputMode="stateHidden">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
