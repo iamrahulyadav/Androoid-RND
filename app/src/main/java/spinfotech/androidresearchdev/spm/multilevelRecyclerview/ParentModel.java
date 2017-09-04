@@ -1,4 +1,4 @@
-package spinfotech.androidresearchdev.multilevelRecyclerview;
+package spinfotech.androidresearchdev.spm.multilevelRecyclerview;
 
 import java.util.List;
 

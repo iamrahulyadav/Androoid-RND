@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc"></string>
+
+    <!--
+
+    @android:style/Theme.Material
+
+    Material Themes api level 21+
+    1. Theme.material - Dark Version
+    2. Theme.material.Light - Light Version
+    3. Theme.material.DarkActionBar
+    3. Theme.material.Light.NoActionbar
+
+    Material Themes api level 7+
+    1. Theme.AppCompat
+    2. Theme.AppCompat.light
+    3. Theme.AppCompat.DarkActionBar
+    4. Theme.AppCompat.NoActionBar
+
+    //define colorCOntrolHighlight in theme
+    this will change the ripple effect color
+
+
+
+    -->
+</resources>

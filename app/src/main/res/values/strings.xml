@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Android Research &amp; Dev</string>
+    <string name="data_not_available">No data Found</string>
+
+
+    <string-array name="modules">
+        <item>Snackbar</item>
+        <item>Toolbar</item>
+        <item>Collapsing Toolbar</item>
+        <item>Coordinate Layout</item>
+        <item>Constraint Layout</item>
+        <item>Material Animation</item>
+        <item>Appbar And Tab layout</item>
+        <item>Snackbar</item>
+        <item>Snackbar</item>
+        <item>Snackbar</item>
+        <item>Snackbar</item>
+    </string-array>
+
 </resources>

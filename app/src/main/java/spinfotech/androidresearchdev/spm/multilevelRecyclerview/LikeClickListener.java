@@ -1,4 +1,4 @@
-package spinfotech.androidresearchdev.multilevelRecyclerview;
+package spinfotech.androidresearchdev.spm.multilevelRecyclerview;
 
 /**
  * Created by sibaprasad on 27/07/17.

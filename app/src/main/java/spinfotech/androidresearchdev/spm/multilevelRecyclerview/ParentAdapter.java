@@ -1,4 +1,4 @@
-package spinfotech.androidresearchdev.multilevelRecyclerview;
+package spinfotech.androidresearchdev.spm.multilevelRecyclerview;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;

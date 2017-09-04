@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".multilevelRecyclerview.MultiRecyclerActivity">
+        <activity android:name=".spm.multilevelRecyclerview.MultiRecyclerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -23,15 +23,23 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".kotlin.CalculatorActivity"
-                  android:windowSoftInputMode="stateHidden">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
+        <activity
+            android:name=".kotlin.CalculatorActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
-
+        <activity
+            android:name=".spm.materialAnimation.MaterialActivity"
+            android:theme="@style/AppThemeDark">
+        </activity>
+        <activity android:name=".nidhi.NidhiMainActivity">
+        </activity>
+        <activity android:name=".sarika.SarikaMainActivity">
+        </activity>
     </application>
 
 </manifest>
