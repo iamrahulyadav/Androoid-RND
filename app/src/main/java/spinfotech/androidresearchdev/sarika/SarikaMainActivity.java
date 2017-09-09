@@ -1,4 +1,4 @@
-package spinfotech.androidresearchdev.nidhi;
+package spinfotech.androidresearchdev.sarika;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

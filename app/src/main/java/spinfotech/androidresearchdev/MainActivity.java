@@ -9,8 +9,8 @@ import android.view.View;
 import butterknife.OnClick;
 import spinfotech.androidresearchdev.naresh.NareshMainActivity;
 import spinfotech.androidresearchdev.nidhi.NidhiMainActivity;
-import spinfotech.androidresearchdev.nidhi.SarikaMainActivity;
-import spinfotech.androidresearchdev.nidhi.SpmMainActivity;
+import spinfotech.androidresearchdev.sarika.SarikaMainActivity;
+import spinfotech.androidresearchdev.spm.SpmMainActivity;
 
 /**
  * Created by sibaprasad on 27/07/17.

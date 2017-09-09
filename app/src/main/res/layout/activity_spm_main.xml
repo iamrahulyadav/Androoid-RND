@@ -7,20 +7,10 @@
     android:layout_height="match_parent"
     tools:context="spinfotech.androidresearchdev.nidhi.NidhiMainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
-        <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/tvCustomView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="CustomView"
-            />
-
-    </LinearLayout>
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/recyclerViewHome"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
 
 
 </ScrollView>
