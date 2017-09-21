@@ -39,7 +39,7 @@
         <activity android:name=".spm.bottomsheet.BottomsheetMainActivity">
 
         </activity>
-        <activity android:name=".amit.AmitMainActivity">
+        <activity android:name=".amit.truck_bottom.TruckActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

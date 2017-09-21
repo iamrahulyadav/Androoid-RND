@@ -30,14 +30,19 @@ public class TruckActivity extends AppCompatActivity {
 		recyclerTruck.setLayoutManager( new LinearLayoutManager( TruckActivity.this, LinearLayoutManager.HORIZONTAL, false ) );
 
 		List< String > listInner = new ArrayList<>();
-		for ( int i = 0; i < 10; i++ ) {
-			listInner.add( "Row Item " + i );
-			if ( i % 2 == 0 ) {
+
+
+		 for ( int i = 0; i <= 7; i++ ) {
+
+			if ( i > 0 && i % 3 == 0 ) {
 				list.add( listInner );
-				listInner.clear();
+				listInner = new ArrayList<>(  );
 			}
-			else if(i == 9){
-				list.add( listInner );
+			else{
+				listInner.add( "Row Item " + i );
+				if(i==7){
+					list.add( listInner );
+				}
 			}
 		}
 

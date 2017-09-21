@@ -3,9 +3,11 @@ package spinfotech.androidresearchdev.amit.truck_bottom;
 import android.content.Context;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +23,13 @@ import spinfotech.androidresearchdev.spm.adapters.viewholders.ViewHolderFooter;
 public class TruckAdapter extends RecyclerView.Adapter<TruckAdapter.TruckViewHolder > {
 
 	List<List<String>> mList;
+//	List<String> mList;
 	Context mContext;
 	LayoutInflater mInflater;
 
-	public TruckAdapter( Context mContext, List< List<String> > mList ) {
+	private static final String TAG = "TruckAdapter";
+
+	public TruckAdapter( Context mContext,  List< List<String> > mList ) {
 		this.mList = mList;
 		this.mContext = mContext;
 		mInflater = LayoutInflater.from( mContext );
@@ -38,9 +43,9 @@ public class TruckAdapter extends RecyclerView.Adapter<TruckAdapter.TruckViewHol
 	}
 
 	@Override
-	public void onBindViewHolder( TruckViewHolder holder, int position ) {
-		List<String> listDataItem = new ArrayList<>(  );
-		listDataItem = mList.get( position );
+	public void onBindViewHolder( TruckViewHolder holder, final int position ) {
+	//	List<String> listDataItem = new ArrayList<>(  );
+ 		final List<String> listDataItem = mList.get( position );
 
 
 		holder.imageView1.setVisibility( View.VISIBLE );
@@ -50,9 +55,7 @@ public class TruckAdapter extends RecyclerView.Adapter<TruckAdapter.TruckViewHol
 		switch ( mList.size() ){
 
 			case 1 :
-
 				// set the image to imageview 1 here
-
 				holder.imageView2.setVisibility( View.GONE );
 				holder.imageView3.setVisibility( View.GONE );
 				break;
@@ -66,8 +69,31 @@ public class TruckAdapter extends RecyclerView.Adapter<TruckAdapter.TruckViewHol
 				// set the image to imageview 1 and 2 and 3 here
 
 				break;
-
 		}
+
+
+		holder.imageView1.setOnClickListener( new View.OnClickListener() {
+			@Override
+			public void onClick( View view ) {
+
+				Log.i( TAG, "onClick: "+position );
+
+				Toast.makeText( mContext, "Item "+listDataItem.get( 0 ), Toast.LENGTH_SHORT ).show();
+			}
+		} );
+		holder.imageView2.setOnClickListener( new View.OnClickListener() {
+			@Override
+			public void onClick( View view ) {
+				Toast.makeText( mContext, "Item "+listDataItem.get( 1 ), Toast.LENGTH_SHORT ).show();
+			}
+		} );
+		holder.imageView3.setOnClickListener( new View.OnClickListener() {
+			@Override
+			public void onClick( View view ) {
+				Toast.makeText( mContext, "Item "+listDataItem.get( 2 ), Toast.LENGTH_SHORT ).show();
+			}
+		} );
+
 	}
 
 	@Override
