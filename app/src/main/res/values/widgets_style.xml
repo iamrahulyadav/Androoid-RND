@@ -209,4 +209,11 @@
     <item name="android:layout_margin">@dimen/dimen_2dp</item>
     <item name="android:background">@android:drawable/dialog_holo_light_frame</item>-->
 
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/Roboto-Bold</item>
+    </style>-->
+
 </resources>
