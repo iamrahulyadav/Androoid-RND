@@ -92,8 +92,8 @@ public class CommonAdapter extends RecyclerView.Adapter< RecyclerView.ViewHolder
 		switch ( holder.getItemViewType() ) {
 			case Constants.ROW_PENDING:
 				ViewHolderHeader viewHolderHeader = (ViewHolderHeader)holder;
-				ModelHeader modelHeader = (ModelHeader )object;
-				viewHolderHeader.setData( modelHeader );
+				/*ModelHeader modelHeader = (ModelHeader )object;
+				viewHolderHeader.setData( modelHeader );*/
 				break;
 			case Constants.ROW_COMPLETED:
 

@@ -71,6 +71,8 @@ public class AmitMainActivity extends AppCompatActivity implements View.OnClickL
 		                                                   R.color.white
 		)  );
 
+		setTabListener(Constants.ROW_PENDING);
+
 	}
 
 	@Override
@@ -114,34 +116,63 @@ public class AmitMainActivity extends AppCompatActivity implements View.OnClickL
 	}
 
 	private void setTabListener(int tabType){
-
-
-		tvPendingTab.setBackgroundColor( ContextCompat.getColor( AmitMainActivity.this,
-		                                                           R.color.white
-		) );
-		tvPendingTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
-		                                                     R.color.black
-		)  );
 		tvUpcomingTab.setBackgroundColor( ContextCompat.getColor( AmitMainActivity.this,
 		                                                           R.color.white
 		) );
+
 		tvUpcomingTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
 		                                                     R.color.black
 		)  );
-		tvCompletedTab.setBackgroundColor( ContextCompat.getColor( AmitMainActivity.this,
-		                                                           R.color.white
-		) );
-		tvCompletedTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
-		                                                     R.color.black
+		tvPendingTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
+		                                                    R.color.black
 		)  );
+		tvCompletedTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
+		                                                    R.color.black
+		)  );
+
+		tvPendingTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,R.drawable.text_boarder_drawable_left_default ) );
+		tvCompletedTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,R.drawable.text_boarder_drawable_right_default ) );
+
 
 		switch ( tabType ){
 			case Constants.ROW_PENDING :
-				tvPendingTab.setBackgroundColor( ContextCompat.getColor( AmitMainActivity.this,
-				                                                         R.color.color_D3D3D3
-				) );
+
+				tvPendingTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,R.drawable.text_boarder_drawable_left_selected ) );
 				tvPendingTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
 				                                                   R.color.white
+				)  );
+				break;
+			case Constants.ROW_UPCOMMING :
+
+				tvUpcomingTab.setBackgroundColor( ContextCompat.getColor( AmitMainActivity.this,
+				                                                          R.color.color_D3D3D3
+				) );
+				tvUpcomingTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
+				                                                    R.color.white
+				)  );
+
+				tvCompletedTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,R.drawable.text_boarder_drawable_right_default ) );
+
+
+				break;
+			case Constants.ROW_COMPLETED :
+
+				tvCompletedTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,R.drawable.text_boarder_drawable_right ) );
+				tvCompletedTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
+				                                                   R.color.white
+				)  );
+
+				break;
+		}
+
+		/*switch ( tabType ){
+			case Constants.ROW_PENDING :
+
+				tvPendingTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,
+				                                                         R.drawable.text_boarder_drawable_left_selected
+				) );
+				tvPendingTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
+				                                                   R.color.black
 				)  );
 				break;
 			case Constants.ROW_UPCOMMING :
@@ -153,14 +184,17 @@ public class AmitMainActivity extends AppCompatActivity implements View.OnClickL
 				)  );
 				break;
 			case Constants.ROW_COMPLETED :
-				tvCompletedTab.setBackgroundColor( ContextCompat.getColor( AmitMainActivity.this,
-				                                                         R.color.color_D3D3D3
+
+				tvCompletedTab.setBackgroundDrawable( ContextCompat.getDrawable( AmitMainActivity.this,
+				                                                               R.drawable.text_boarder_drawable_right
 				) );
 				tvCompletedTab.setTextColor( ContextCompat.getColor( AmitMainActivity.this,
-				                                                   R.color.white
+				                                                   R.color.black
 				)  );
+
+
 				break;
-		}
+		}*/
 		mListData.clear();
 		for(int i = 0;i<10;i++){
 			mListData.add( new Child() );
