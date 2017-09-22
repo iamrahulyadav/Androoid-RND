@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9e9e9"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp">
+            <TextView
+                android:id="@+id/txt_header_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Taxi Service"
+                android:textColor="#1d77ec"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="12dp" />
+        </android.support.v7.widget.CardView>
+        <include
+            layout="@layout/layout_car_time_detail" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ececec"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="With Driver"
+                android:paddingLeft="16dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Without Driver"
+                android:paddingLeft="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ececec"
+            android:padding="8dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="With Fuel"
+                android:paddingLeft="16dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Without Fuel"
+                android:paddingLeft="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ececec"
+            android:padding="8dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Passenger: 04"
+                android:paddingLeft="16dp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:text="Package: 4 Km 100m" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/pick_location_view" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <TextView
+                android:id="@+id/txt_req_accepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Accepted"
+                android:textSize="16sp"
+                android:textColor="#54bc81"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/txt_view_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Note"
+                android:textSize="16sp"
+                android:textColor="#425ac2"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please review Fare Details"
+                android:textSize="16sp"
+                android:layout_below="@id/txt_req_accepted"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_action_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Cancel"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/shape_rectangle_bottom_redious"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
